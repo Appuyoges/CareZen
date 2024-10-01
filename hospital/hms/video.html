@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curie Bot</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            background-image: url('hospitalbot.jpg'); /* Replace 'hospitalbot.jpg' with the URL of your image */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .heading-frame {
+            border: 2px solid rgb(255, 255, 255);
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent white background */
+            border-radius: 10px; /* Rounded corners */
+            position: relative;
+            z-index: 1; /* Ensure the frame stays above the logo */
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px; /* Adjust the top margin as needed */
+            left: 5%;
+            transform: translateX(-50%);
+            max-width: 150px; /* Adjust the size of the logo */
+            border-radius: 50%; /* Make it round */
+            z-index: 0; /* Ensure the logo stays behind the frame */
+        }
+
+        iframe {
+            border: none;
+            margin-top: 20px; /* Adjust as needed */
+        }
+
+        h1, h2 {
+            margin: 0;
+            color: rgb(255, 255, 255); /* Set text color to black */
+        }
+    </style>
+</head>
+<body>
+    <img class="logo" src="logo.jpg" alt="Logo"> <!-- Replace 'logo.png' with the URL or path of your logo -->
+    <div class="heading-frame">
+        <h1>CuriousFreaks HMS</h1>
+        <h2>DISEASE DIAGNOSTIC BOT</h2>
+    </div>
+    <iframe
+        allow="microphone;"
+        width="350"
+        height="430"
+        src="https://console.dialogflow.com/api-client/demo/embedded/37d3ccfb-28f3-4fa4-847e-5e2d372d2fd3">
+    </iframe>
+</body>
+</html>
